@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slick</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .carousel-inner {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+      }
+      .item {
+        position: relative;
+      }
+      .carousel-inner img {
+        width: 100%;
+        object-fit: cover;
+        height: 500px;
+      }
+      .carousel-caption {
+        right: 0;
+        left: 0;
+        padding-bottom: 30px;
+        top: 30%;
+        text-align: left;
+        max-width: 1140px;
+        margin: auto;
+        position: absolute;
+        color: white;
+      }
+      .carousel-caption h2 {
+        font-weight: bold;
+        font-size: 34px;
+        margin-bottom: 20px;
+      }
+      .carousel-caption h4 {
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      .baner-btn {
+        padding: 10px 25px;
+        color: white;
+        margin-top: 40px;
+        border: 2px solid blue;
+        border-radius: 20px;
+        display: inline-block;
+        text-decoration: none;
+      }
+      .baner-btn:hover {
+        color: white;
+        background: blue;
+      }
+      .main-slider .slick-arrow {
+        color: #fff;
+        border-radius: 100px;
+        z-index: 1;
+      }
+      .main-slider .slick-next {
+        right: 0px;
+        width: 50px;
+        height: 50px;
+      }
+      .main-slider .slick-prev {
+        left: 0px;
+        width: 50px;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="carousel-inner main-slider">
+      <div class="item">
+        <img src="images/banner5.jpg" alt=" " />
+        <div class="carousel-caption">
+          <h2>WEB DESIGNING</h2>
+          <h4>DGreat Design Make somes Something Meaningful & Memorable</h4>
+          <a class="baner-btn" href="#">Read More </a>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/banner4.jpg" alt=" " />
+        <div class="carousel-caption">
+          <h2>WEB DESIGNING</h2>
+          <h4>DGreat Design Make somes Something Meaningful & Memorable</h4>
+          <a class="baner-btn" href="#">Read More </a>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/banner2.jpg" alt=" " />
+        <div class="carousel-caption">
+          <h2>WEB DEVELOPMENT</h2>
+          <h4>DGreat Design Make somes Something Meaningful & Memorable</h4>
+          <a class="baner-btn" href="#">Read More </a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".main-slider").slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        });
+      });
+    </script>
+  </body>
+</html>
